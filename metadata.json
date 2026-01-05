@@ -1,0 +1,5 @@
+{
+  "name": "Module Production & Sales Intelligent Comparison System V3.0",
+  "description": "An advanced React-based dashboard for comparing monthly production and sales forecasts between different versions of Excel reports, featuring smart delay detection and AI-powered insights.",
+  "requestFramePermissions": []
+}
