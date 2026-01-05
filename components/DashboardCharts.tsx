@@ -9,7 +9,7 @@ import {
   Tooltip, 
   Legend, 
   ResponsiveContainer, 
-  AreaChart, 
+  ComposedChart, 
   Area,
   Line
 } from 'recharts';
@@ -76,7 +76,7 @@ const DashboardCharts: React.FC<Props> = ({ stats }) => {
         </h3>
         <div className="h-[350px]">
           <ResponsiveContainer width="100%" height="100%">
-            <AreaChart data={chartData} margin={{ top: 10, right: 30, left: 0, bottom: 20 }}>
+            <ComposedChart data={chartData} margin={{ top: 10, right: 30, left: 0, bottom: 20 }}>
               <defs>
                 <linearGradient id="colorAct" x1="0" y1="0" x2="0" y2="1">
                   <stop offset="5%" stopColor="#10b981" stopOpacity={0.1}/>
@@ -104,7 +104,7 @@ const DashboardCharts: React.FC<Props> = ({ stats }) => {
               <Legend verticalAlign="top" height={36} iconType="circle" wrapperStyle={{ fontSize: '11px', fontWeight: 'bold' }} />
               <Area type="monotone" name="新訂單 (New ACT)" dataKey="newAct" stroke="#10b981" strokeWidth={3} fillOpacity={1} fill="url(#colorAct)" />
               <Line type="monotone" name="新需求 (New FCST)" dataKey="newFcst" stroke="#6366f1" strokeDasharray="5 5" dot={{ r: 4, fill: '#6366f1' }} activeDot={{ r: 6 }} />
-            </AreaChart>
+            </ComposedChart>
           </ResponsiveContainer>
         </div>
       </div>

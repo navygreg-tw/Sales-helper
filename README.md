@@ -1,20 +1,56 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# Sales Helper
 
-# Run and deploy your AI Studio app
+This is a React application built with Vite, designed to assist with sales and production comparison.
 
-This contains everything you need to run your app locally.
+## Getting Started
 
-View your app in AI Studio: https://ai.studio/apps/drive/1xdmSdNq8MCd3AZaj3t1mzLqe9HFVNpKK
+### Prerequisites
+- Node.js (v18 or higher recommended)
+- npm
 
-## Run Locally
+### Installation
 
-**Prerequisites:**  Node.js
+1. Clone the repository:
+   ```bash
+   git clone <repository-url>
+   ```
+2. Navigate to the project directory:
+   ```bash
+   cd Sales-helper
+   ```
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
 
+### Development
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+To start the development server:
+
+```bash
+npm run dev
+```
+
+The application will be available at `http://localhost:5173` (or the port shown in your terminal).
+
+## Deployment
+
+This project is configured to deploy to **GitHub Pages** automatically using GitHub Actions.
+
+### Setup
+1. Go to your repository **Settings**.
+2. Navigate to **low-code** > **Pages** (or just **Pages**).
+3. Under **Build and deployment** > **Source**, select **GitHub Actions**.
+
+### Triggering Deployment
+Deployment is triggered automatically when you push changes to the `main` branch.
+
+## Project Structure
+
+- `src/`: Source code including components and main application logic.
+- `public/`: Static assets.
+- `.github/workflows/`: CI/CD configurations.
+
+## Notes
+- This project uses `vite` for fast build and development.
+- Ensure all environment variables (if any) are configured in GitHub Secrets for production deployment.
